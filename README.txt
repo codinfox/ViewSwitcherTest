@@ -1,0 +1,1 @@
+This is a demonstration of view switcher which is a self-implemented TabBar-like navigation method. The 'Tab Bar' can hide and won't cover the view.
