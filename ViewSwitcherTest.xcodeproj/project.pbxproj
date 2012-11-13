@@ -18,6 +18,12 @@
 		B5E866CE165214A600711FD2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E866CD165214A600711FD2 /* Default-568h@2x.png */; };
 		B5E866D1165214A600711FD2 /* TDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E866D0165214A600711FD2 /* TDViewController.m */; };
 		B5E866D4165214A600711FD2 /* TDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E866D2165214A600711FD2 /* TDViewController.xib */; };
+		B5E866E01652181400711FD2 /* TDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E866DE1652181400711FD2 /* TDFirstViewController.m */; };
+		B5E866E11652181400711FD2 /* TDFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E866DF1652181400711FD2 /* TDFirstViewController.xib */; };
+		B5E866E51652182600711FD2 /* TDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E866E31652182600711FD2 /* TDSecondViewController.m */; };
+		B5E866E61652182600711FD2 /* TDSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E866E41652182600711FD2 /* TDSecondViewController.xib */; };
+		B5E866EA1652182F00711FD2 /* TDThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E866E81652182F00711FD2 /* TDThirdViewController.m */; };
+		B5E866EB1652182F00711FD2 /* TDThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E866E91652182F00711FD2 /* TDThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,15 @@
 		B5E866CF165214A600711FD2 /* TDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDViewController.h; sourceTree = "<group>"; };
 		B5E866D0165214A600711FD2 /* TDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDViewController.m; sourceTree = "<group>"; };
 		B5E866D3165214A600711FD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TDViewController.xib; sourceTree = "<group>"; };
+		B5E866DD1652181400711FD2 /* TDFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDFirstViewController.h; sourceTree = "<group>"; };
+		B5E866DE1652181400711FD2 /* TDFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDFirstViewController.m; sourceTree = "<group>"; };
+		B5E866DF1652181400711FD2 /* TDFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDFirstViewController.xib; sourceTree = "<group>"; };
+		B5E866E21652182600711FD2 /* TDSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSecondViewController.h; sourceTree = "<group>"; };
+		B5E866E31652182600711FD2 /* TDSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSecondViewController.m; sourceTree = "<group>"; };
+		B5E866E41652182600711FD2 /* TDSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDSecondViewController.xib; sourceTree = "<group>"; };
+		B5E866E71652182F00711FD2 /* TDThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDThirdViewController.h; sourceTree = "<group>"; };
+		B5E866E81652182F00711FD2 /* TDThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDThirdViewController.m; sourceTree = "<group>"; };
+		B5E866E91652182F00711FD2 /* TDThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,15 @@
 				B5E866D0165214A600711FD2 /* TDViewController.m */,
 				B5E866D2165214A600711FD2 /* TDViewController.xib */,
 				B5E866BE165214A600711FD2 /* Supporting Files */,
+				B5E866DD1652181400711FD2 /* TDFirstViewController.h */,
+				B5E866DE1652181400711FD2 /* TDFirstViewController.m */,
+				B5E866DF1652181400711FD2 /* TDFirstViewController.xib */,
+				B5E866E21652182600711FD2 /* TDSecondViewController.h */,
+				B5E866E31652182600711FD2 /* TDSecondViewController.m */,
+				B5E866E41652182600711FD2 /* TDSecondViewController.xib */,
+				B5E866E71652182F00711FD2 /* TDThirdViewController.h */,
+				B5E866E81652182F00711FD2 /* TDThirdViewController.m */,
+				B5E866E91652182F00711FD2 /* TDThirdViewController.xib */,
 			);
 			path = ViewSwitcherTest;
 			sourceTree = "<group>";
@@ -164,6 +188,9 @@
 				B5E866CC165214A600711FD2 /* Default@2x.png in Resources */,
 				B5E866CE165214A600711FD2 /* Default-568h@2x.png in Resources */,
 				B5E866D4165214A600711FD2 /* TDViewController.xib in Resources */,
+				B5E866E11652181400711FD2 /* TDFirstViewController.xib in Resources */,
+				B5E866E61652182600711FD2 /* TDSecondViewController.xib in Resources */,
+				B5E866EB1652182F00711FD2 /* TDThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +204,9 @@
 				B5E866C4165214A600711FD2 /* main.m in Sources */,
 				B5E866C8165214A600711FD2 /* TDAppDelegate.m in Sources */,
 				B5E866D1165214A600711FD2 /* TDViewController.m in Sources */,
+				B5E866E01652181400711FD2 /* TDFirstViewController.m in Sources */,
+				B5E866E51652182600711FD2 /* TDSecondViewController.m in Sources */,
+				B5E866EA1652182F00711FD2 /* TDThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
