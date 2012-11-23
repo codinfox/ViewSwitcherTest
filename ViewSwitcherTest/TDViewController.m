@@ -25,12 +25,13 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.isTabBarViewShown = NO;
     [self configureFirstViewController];
+//performsegue:WithIdentifier
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self setTabBarViewVisible:NO];
+    [self setTabBarViewVisible:NO withAnimation:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,25 +42,39 @@
 
 #pragma mark - View Configuration
 
-- (void)setTabBarViewVisible:(BOOL)yesOrNo
+- (void)setTabBarViewVisible:(BOOL)isVisible withAnimation:(BOOL)isWithAnimation
 {
-    if (yesOrNo)
+    if (isVisible)
     {
-        [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        if (isWithAnimation)
+            [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                CGRect frame = self.tabBarView.frame;
+                frame.origin.y = 390;
+                self.tabBarView.frame = frame;
+            } completion:nil];
+        else
+        {
             CGRect frame = self.tabBarView.frame;
             frame.origin.y = 390;
             self.tabBarView.frame = frame;
-        } completion:nil];
+        }
     }
     else
     {
-        [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        if (isWithAnimation)
+            [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                CGRect frame = self.tabBarView.frame;
+                frame.origin.y = 450;
+                self.tabBarView.frame = frame;
+            } completion:nil];
+        else
+        {
             CGRect frame = self.tabBarView.frame;
             frame.origin.y = 450;
             self.tabBarView.frame = frame;
-        } completion:nil];
+        }
     }
-    self.isTabBarViewShown = yesOrNo;
+    self.isTabBarViewShown = isVisible;
 }
 
 - (void)configureFirstViewController
@@ -71,7 +86,7 @@
     }
     self.firstViewController = [[TDFirstViewController alloc] init];
     [self.view insertSubview:self.firstViewController.view belowSubview:self.tabBarView];
-    [self.firstViewController viewWillAppear:YES];//?
+    //[self.firstViewController viewWillAppear:YES];//?
 }
 
 - (void)configureSecondViewController
@@ -83,7 +98,7 @@
     }
     self.secondViewController = [[TDSecondViewController alloc] init];
     [self.view insertSubview:self.secondViewController.view belowSubview:self.tabBarView];
-    [self.secondViewController viewWillAppear:YES];
+    //[self.secondViewController viewWillAppear:YES];
 }
 
 - (void)configureThirdViewController
@@ -95,7 +110,7 @@
     }
     self.thirdViewController = [[TDThirdViewController alloc] init];
     [self.view insertSubview:self.thirdViewController.view belowSubview:self.tabBarView];
-    [self.thirdViewController viewWillAppear:YES];
+    //[self.thirdViewController viewWillAppear:YES];
 }
 
 - (void)clearAllViewControllers
@@ -110,11 +125,11 @@
 - (IBAction)showTabBarView {
     if (self.isTabBarViewShown)
     {
-        [self setTabBarViewVisible:NO];
+        [self setTabBarViewVisible:NO withAnimation:YES];
     }
     else
     {
-        [self setTabBarViewVisible:YES];
+        [self setTabBarViewVisible:YES withAnimation:YES];
     }
 }
 

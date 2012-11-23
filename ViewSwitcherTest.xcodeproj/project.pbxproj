@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56AA7C8165FA1B2009A02DB /* TDTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = B56AA7C7165FA1B2009A02DB /* TDTimeLine.m */; };
+		B56AA7CA165FA5DB009A02DB /* TDTimeLine.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56AA7C9165FA5DB009A02DB /* TDTimeLine.xib */; };
+		B5ABC76C165E814300EB5E42 /* TDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5ABC76B165E814300EB5E42 /* TDViewController.xib */; };
 		B5E866B8165214A600711FD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E866B7165214A600711FD2 /* UIKit.framework */; };
 		B5E866BA165214A600711FD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E866B9165214A600711FD2 /* Foundation.framework */; };
 		B5E866BC165214A600711FD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E866BB165214A600711FD2 /* CoreGraphics.framework */; };
@@ -27,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B56AA7C6165FA1B2009A02DB /* TDTimeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTimeLine.h; sourceTree = "<group>"; };
+		B56AA7C7165FA1B2009A02DB /* TDTimeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTimeLine.m; sourceTree = "<group>"; };
+		B56AA7C9165FA5DB009A02DB /* TDTimeLine.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDTimeLine.xib; sourceTree = "<group>"; };
+		B5ABC76B165E814300EB5E42 /* TDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TDViewController.xib; path = ../TDViewController.xib; sourceTree = "<group>"; };
 		B5E866B3165214A600711FD2 /* ViewSwitcherTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewSwitcherTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E866B7165214A600711FD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B5E866B9165214A600711FD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,12 +105,13 @@
 		B5E866BD165214A600711FD2 /* ViewSwitcherTest */ = {
 			isa = PBXGroup;
 			children = (
+				B56AA7C9165FA5DB009A02DB /* TDTimeLine.xib */,
+				B5ABC76B165E814300EB5E42 /* TDViewController.xib */,
 				B5E866C6165214A600711FD2 /* TDAppDelegate.h */,
 				B5E866C7165214A600711FD2 /* TDAppDelegate.m */,
 				B5E866CF165214A600711FD2 /* TDViewController.h */,
 				B5E866D0165214A600711FD2 /* TDViewController.m */,
 				B5E866D2165214A600711FD2 /* TDViewController.xib */,
-				B5E866BE165214A600711FD2 /* Supporting Files */,
 				B5E866DD1652181400711FD2 /* TDFirstViewController.h */,
 				B5E866DE1652181400711FD2 /* TDFirstViewController.m */,
 				B5E866DF1652181400711FD2 /* TDFirstViewController.xib */,
@@ -113,6 +121,9 @@
 				B5E866E71652182F00711FD2 /* TDThirdViewController.h */,
 				B5E866E81652182F00711FD2 /* TDThirdViewController.m */,
 				B5E866E91652182F00711FD2 /* TDThirdViewController.xib */,
+				B5E866BE165214A600711FD2 /* Supporting Files */,
+				B56AA7C6165FA1B2009A02DB /* TDTimeLine.h */,
+				B56AA7C7165FA1B2009A02DB /* TDTimeLine.m */,
 			);
 			path = ViewSwitcherTest;
 			sourceTree = "<group>";
@@ -191,6 +202,8 @@
 				B5E866E11652181400711FD2 /* TDFirstViewController.xib in Resources */,
 				B5E866E61652182600711FD2 /* TDSecondViewController.xib in Resources */,
 				B5E866EB1652182F00711FD2 /* TDThirdViewController.xib in Resources */,
+				B5ABC76C165E814300EB5E42 /* TDViewController.xib in Resources */,
+				B56AA7CA165FA5DB009A02DB /* TDTimeLine.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +220,7 @@
 				B5E866E01652181400711FD2 /* TDFirstViewController.m in Sources */,
 				B5E866E51652182600711FD2 /* TDSecondViewController.m in Sources */,
 				B5E866EA1652182F00711FD2 /* TDThirdViewController.m in Sources */,
+				B56AA7C8165FA1B2009A02DB /* TDTimeLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +302,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewSwitcherTest/ViewSwitcherTest-Prefix.pch";
 				INFOPLIST_FILE = "ViewSwitcherTest/ViewSwitcherTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +314,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewSwitcherTest/ViewSwitcherTest-Prefix.pch";
 				INFOPLIST_FILE = "ViewSwitcherTest/ViewSwitcherTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -323,6 +339,7 @@
 				B5E866D9165214A600711FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

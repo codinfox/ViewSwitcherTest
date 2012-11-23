@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TDTimeLine.h"
 
-@interface TDFirstViewController : UIViewController
+@interface TDFirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, TDTimeLineDelegate>
 
 @end
